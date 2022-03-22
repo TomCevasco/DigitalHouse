@@ -26,7 +26,7 @@ header .encabezado { margin: 15px
 display: flex;
 justify-content: space-around;
 align-items: center;
-width: 90vw;}
+}
 
 header nav {display: none ;}
   
@@ -176,9 +176,9 @@ width: 100vw;
 padding: 10px; }
 
 footer section  {
-  width: 95vw;
+
 margin: 10px ;
-padding: 20px;
+padding: 10px;
 display: flex ;
 flex-direction:column ;
 justify-content: space-around}
@@ -234,9 +234,9 @@ justify-content: space-between;
 display: flex;}
 
 footer section  {
-  width: 95vw;
+
 margin: 10px ;
-padding: 20px;
+padding: 10px;
 display: flex ;
 flex-direction:row ;
 justify-content: space-around}

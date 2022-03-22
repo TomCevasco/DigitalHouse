@@ -16,6 +16,7 @@ h3 {font-size: 24px;}
 
 header  {background-color: #EAC926;
   padding: 20px;
+
   ;
 }
 
@@ -140,12 +141,12 @@ h2{ font-size: 24px}
 
 footer { background-color: white;
 width: 100vw;
-padding: 10px; }
+}
 
 footer section  {
   width: 95vw;
 margin: 10px ;
-padding: 20px;
+padding: 10px;
 display: flex ;
 flex-direction:column ;
 justify-content: space-around}
@@ -176,10 +177,16 @@ margin: auto;
     
 
 
-@media (max-width: 361px)
-{  main section article .descripciones  { display: none;
-   }
-  }
+     @media (max-width: 361px)
+     {  main section article .descripciones  { display: none;
+        }
+        header  { 
+     position: fixed;  top: 0;
+         
+         }
+           
+        main section.formulario{ margin-top: 200px;} 
+       }
 
 @media (min-width: 361px)
 { main section article {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
@@ -209,7 +216,7 @@ margin-top: 20px;
 footer section  {
   width: 95vw;
 margin: 10px ;
-padding: 20px;
+padding: 10px;
 display: flex ;
 flex-direction:row ;
 justify-content: space-around}
@@ -249,10 +256,10 @@ color: #837d7d; }
 }
 
 
-main section.formulario {
+ section.formulario {
 
-  margin-top : 0.5vh
-  ;text-align: left;
+
+  text-align: left;
 border-bottom: #837d7d solid 0.5px;
 ;}
 
@@ -268,12 +275,6 @@ border-bottom: #837d7d solid 0.5px;
 }
 
 
-
-.formularioLogin div {
-  margin: 40px;
-  text-align: left
-  ;align-items: center  
-  } 
 
 .formulario div {
   margin: 40px;
@@ -292,7 +293,10 @@ border-bottom: #837d7d solid 0.5px;
     } 
 
     .fotoperfil {
-      font-size: 70%;
+      font-size: 13px;
+ 
+
+     
     }
     
     
@@ -308,6 +312,13 @@ border-bottom: #837d7d solid 0.5px;
       
     }
 
+    .burbuja:hover{
+
+      border: orange solid 3px;
+      zoom: 101%;
+      background-color: rgb(238, 244, 248);
+    }
+
     .botton {
       padding-left: 30PX  ;
 text-align: center;
@@ -318,4 +329,10 @@ text-align: center;
     background-color: #0044aa;
     color: #fff;
     
+    }
+
+    .botton:hover{
+
+      border: rgb(245, 173, 30) solid 2px;
+ 
     }

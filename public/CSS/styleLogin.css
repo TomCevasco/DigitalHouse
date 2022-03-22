@@ -8,22 +8,23 @@ body {  font-family: 'Roboto', sans-serif;
     background-color: white ;
 
 }
-
 p {
-  font-size: 12px;
+  font-size: 12px; 
 }
 
 h3 {font-size: 24px;}
 
 header  {background-color: #EAC926;
   padding: 20px;
-  ;
+  top: 0;
+/* position: fixed; */
+  
 }
 
 header .encabezado { 
 
 align-items: center;
-width: 90vw;}
+}
   
 header div.logo  {width: 190px;
 padding: 10px;}
@@ -61,12 +62,15 @@ header ul li a {
 
 header nav {display: none ;}
 
-main section { width: 100vw;
+
+main section {
+
   padding: 20px;
 /* text-align: center;*/ } 
 
 
 main section article {
+  
 
   background-color: #fff;
   padding: 15px;
@@ -148,13 +152,13 @@ main section article .Descuento{ font-size: 16px;
 h2{ font-size: 24px}
 
 footer { background-color: white;
-width: 100vw;
+
 padding: 10px; }
 
 footer section  {
-  width: 95vw;
+
 margin: 10px ;
-padding: 20px;
+
 display: flex ;
 flex-direction:column ;
 justify-content: space-around}
@@ -183,6 +187,12 @@ footer section div .Icono {color:#1259c3
 @media (max-width: 361px)
 {  main section article .descripciones  { display: none;
    }
+   header  { 
+position: fixed;  top: 0;
+    
+    }
+      
+   main section.formularioLogin { margin-top: 200px;} 
   }
 
 @media (min-width: 361px)
@@ -203,7 +213,7 @@ justify-content: space-between;
     }
 
     footer section  {
-      width: 95vw;
+     
     margin: 10px ;
     padding: 20px;
     display: flex ;
@@ -295,7 +305,7 @@ section.formularioLogin{ background-color: #ffffff;
     
     .burbuja{
 
-      width: 50vw;
+      width: 60vw;
       max-width: 600px;
       height: 4vh;
       border-radius: 8px;
@@ -305,6 +315,13 @@ section.formularioLogin{ background-color: #ffffff;
       
       
       
+    }
+
+    .burbuja:hover{
+
+      border: orange solid 3px;
+      zoom: 101%;
+      background-color: rgb(238, 244, 248);
     }
 
     .botton {
