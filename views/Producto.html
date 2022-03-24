@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Bienvenclassxs a Mercado Liebre</title>
-    <link rel="stylesheet" href="/CSS/styleRegistro.css">
+    <link rel="stylesheet" href="/CSS/styleProducto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -62,84 +62,85 @@
 
 <body>
     
+    
     <main>
 
 <section class="formulario">
 
-    <form action="/" method="login">
+   <form action="/crear-Producto" method="post">
 
-    <h1 >Registro de Usuario</h1>
+    <h1 >Alta de Producto</h1>
     
+    <div>   <label for="Nombre del Producto"></label> 
     
-    <div>   <label for="Apellido y Nombre"></label> 
-    
-    <input type="text" name="Apellido y Nombre" placeholder="Apellido y Nombre" class="burbuja" required pattern=".[a-z].{4,8}" >
+    <input type="text" name="Nombre del Producto" placeholder="Nombre del Producto" class="burbuja" required pattern=".[a-z].{4,30}"    >
     
     </div>
 
-    <div>   <label for="Nobre de Usuario"></label> 
+    <div>   <label for="Precio del producto"></label> 
     
-        <input type="text" name="Nobre de Usuario" placeholder="Nobre de Usuario" class="burbuja" >
+        <input type="number" name="PrecioProd" placeholder="Precio del Producto" class="burbuja" >
         
         </div>
 
-        <div>   <label for="Email"></label> 
-    
-            <input type="email" name="Email" placeholder="Email" class="burbuja">
-            
-            </div>
         
-
-            <h2>Fecha de Nacimiento</h2>
-            <div>   
-             <input type="date" name="Fecha de Nacimiento" id="Fecha de Nacimiento" class="burbuja" required>
-                
-                </div>
-
-                
-        <div>  <label for="Domicilio"></label> 
-    
-            <input type="text" name="Domicilio" placeholder="Domicilio" class="burbuja" required>
-            
-            </div>
-            <h2>Perfil del Usuario</h2>
-            <div class="perfil">  <label for="PerfildelUsuario"></label> 
-    
-              <div> <div class="radio-buttons"> <input type="radio" value="Comprador" name="PerfildelUsuario" id="Comprador" > <label for="Comprador"></label>Comprador</div>
-            <div class="radio-buttons"> <input type="radio" value="Vendedor" name="PerfildelUsuario" id="Vendedor" > <label for="Vendedor"> </label>Vendedor</div>
-            </div>
-                </div>
-                <h2>Intereses</h2>
-                <div class="intereses">
-                
-
-                  <label for="Intereses"></label> 
+  
+        <h2>Esta en oferta?</h2>
+        <div class="perfil">  <label for="Oferta">  </label> 
+     
+            <div> <input type="radio" value="Si" name="OfertaSi" > <label for="Oferta">Si</label>
+              <input type="radio" value="No" name="OfertaNo "> <label for="Oferta">No</Vendedor>
+          </div>
+        </div>
         
-                <div >  <input type="checkbox" value="Electro" name="Intereses" > <label for="Electro"> Electro</label></div >
-                <div>  <input type="checkbox" value="Moda" name="Intereses" > <label for="Moda"> Moda</label></div>
-                <div>  <input type="checkbox" value="Casa" name="Intereses" > <label for="Casa"> Casa</label> </div>
-                <div>  <input type="checkbox" value="Jardin" name="Intereses" > <label for="Jardin"> Jardin</label> </div>
+        <!-- <h2>Perfil del Usuario</h2>
+        <div class="perfil">  <label for="PerfildelUsuario"></label> 
+
+          <div> <div class="radio-buttons"> <input type="radio" value="Comprador" name="PerfildelUsuario" id="Comprador" > <label for="Comprador"></label>Comprador</div>
+        <div class="radio-buttons"> <input type="radio" value="Vendedor" name="PerfildelUsuario" id="Vendedor" > <label for="Vendedor"> </label>Vendedor</div>
+        </div>
+            </div> -->
+                <h2>Categoria</h2>
+                <div class="intereses">         
                 
-               
-                </div>  
-                <h2>Imagen de Perfil</h2>
 
-                <div class="fotoperfil"><input type="file" name="FotoPerfil" id=""></div>
-
-                <h2>Clave de acceso</h2>
-
-                <div><label for="Contraseña"></label> 
-    
-                    <input type="password" name="password" placeholder="password" class="burbuja" required pattern=".{6,8}"  title = "La contraseña debe tener una extension de entre 6 y 8 caracteres"> 
-                    
+                  <label for="Categoria"></label> 
+        
+                <div >  <input type="checkbox" value="Electro" name="Categoria" > <label for="Electro"> Electro</label></div >
+                <div>  <input type="checkbox" value="Moda" name="Categoria" > <label for="Moda"> Moda</label></div>
+                <div>  <input type="checkbox" value="Casa" name="Categoria" > <label for="Casa"> Casa</label> </div>
+                <div>  <input type="checkbox" value="Jardin" name="Categoria" > <label for="Jardin"> Jardin</label> </div>
+                
                     </div>
-
-                  
-                    <div> <label for="Confirmar contraseña"></label> 
-    
-                        <input type="password" name="confirm password" placeholder="Confirmpassword" required pattern=".{6,8}" title = "La contraseña debe tener una extension de entre 6 y 8 caracteres" class="burbuja">
+                
+                    <br>
+                    <h2>Ciudad</h2>
+                   <div><label for="Ciudad"></label></div>
+                    <div ><select name="Ciudad" class="burbuja">
+                    
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Ciudad De Buenos Aires">Ciudad De Buenos Aires</option>
+                    <option value="Rosario">Rosario</option>
+                    <option value="Cordoba">Cordoba</option>
+                     
                         
-                        </div>
+                    </select>
+                </div>  
+                <h3>Descripcion del Producto</h3>
+                   
+                    <label for="descripcion del producto" ></label> 
+                    <div class="text-area">
+                    <textarea name="descripcion del producto" placeholder="Intruduzca detalle del producto aquí" cols="30" rows="7"></textarea> </div>
+                    
+                    <h2>Imagen del Producto</h2>
+                    <br>
+
+                    <article class="producto">
+                        <img src="/images/img-Iphone11.webp" alt="Iphone11">
+                        <h2 class="Desc-producto">Iphone 11</h2>
+                    </article>
+                   
+
                 <div>
                     <button type="submit"   class="botton">Guardar  </button>
                     <button type="reset"   class="botton">Borrar   </button >
@@ -147,6 +148,9 @@
                 
                 </form>
                 </section>
+
+
+                
 </div>
 </main>
 
@@ -185,3 +189,4 @@
 </body>
 </html>
 
+     1

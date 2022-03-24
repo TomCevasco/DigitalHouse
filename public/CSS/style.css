@@ -2,7 +2,6 @@
 padding : 0px;
 box-sizing: border-box;
 
-
 }
 
 body {  font-family: 'Roboto', sans-serif;
@@ -13,6 +12,7 @@ p {
   font-size: 12px;
 }
 
+
 h3 {font-size: 24px;}
 
 
@@ -21,10 +21,9 @@ header  {background-color: #EAC926;
   ;
 }
 
-header .encabezado { margin: 15px 
-;
+header .encabezado { 
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 }
 
@@ -32,6 +31,23 @@ header nav {display: none ;}
   
 header div.logo  {width: 190px;
 padding: 10px;}
+
+.logo {
+
+  animation: aumentar 1s linear 10 alternate;;
+}
+@keyframes aumentar{
+
+  0%{ transform: scale(1);
+  
+  }
+  
+  100% {  transform: scale(1.3)
+  
+  
+  
+  } }
+
 
 .barra  {
   display: none;
@@ -105,9 +121,12 @@ article.ultimaVisita {
 main section article {
 
   background-color: #fff;
-  padding: 15px;
+
   margin: 10px; 
-  
+  box-shadow : none
+  ;
+  transition-property: box-shadow;
+  transition-duration: 00.5s;
 }
 
 
@@ -128,6 +147,8 @@ padding: 10px;}
   position:absolute ;
   right:20px ;
   top:-15px ;
+  transition-duration: 1s;
+
  
   }
 
@@ -157,17 +178,29 @@ text-align: center;
 padding: 10px;}
 
 
-.Precio { font-size: 18px; width: 30%;
+
+.Precio { font-size: 25px; width: 30%;
+  font-style:inherit;
+  margin-right: 30px
+ 
+  ;
+  
 }
 
-.Descuento{ font-size: 16px; 
+.Descuento{ font-size: 20px; 
+ 
   color: #39b54a;
-width: 70%}
+width: 60%}
 
+main section article {display: flex;}
 
+  main section article .descripciones{ 
+    display: block;
+     font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;
+}
 
-  main section article .descripciones{ font-size: 16px;
-    color: #666;}
 
 h2{ font-size: 24px}
 
@@ -176,7 +209,6 @@ width: 100vw;
 padding: 10px; }
 
 footer section  {
-
 margin: 10px ;
 padding: 10px;
 display: flex ;
@@ -186,7 +218,7 @@ justify-content: space-around}
  .Novedades  { 
   color :  #837d7d;
 text-align: center;
-font-size: 12;
+font-size: 12px;
 margin-top: 20px;
  ;
  }
@@ -195,24 +227,24 @@ margin-top: 20px;
 flex-direction: row;
 justify-content: ; */
 
- .Icono {color:#1259c3
-        ;
+ .Icono {color:#1259c3 ;
         font-size: 2em;
         margin-top: 10px;
         margin-bottom: 10px;
+        transition-property: color;
+        transition-duration: 0.05s;
         
      }
     
 
 
 @media (max-width: 361px)
-{  main section article .descripciones  { display: none};
-   main section article { width:100% }
+ {  
+ main section article { width:100% }
 }
 
 @media (min-width: 361px)
-{ main section article {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-  }
+ { 
   main section article {
     width: 45%
   }}
@@ -234,7 +266,7 @@ justify-content: space-between;
 display: flex;}
 
 footer section  {
-
+  width: 95vw;
 margin: 10px ;
 padding: 10px;
 display: flex ;
@@ -305,3 +337,22 @@ color: #837d7d;
     text-align: left
     ;
     } 
+     section article:hover .descripciones {
+
+  color: rgb(61, 46, 46);
+  
+}
+main section article:hover {
+
+  box-shadow: 0px 0px 10px rgb(78, 74, 74);
+}
+
+main section article:hover i {
+
+  transform: rotate(261deg);
+}
+
+.Icono:hover {
+
+  color: #39b54a;
+}

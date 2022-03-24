@@ -22,7 +22,8 @@ header  {background-color: #EAC926;
 }
 
 header .encabezado { 
-
+  display: flex;
+  justify-content: space-between;
 align-items: center;
 }
   
@@ -158,28 +159,29 @@ padding: 10px; }
 footer section  {
 
 margin: 10px ;
-
+padding: 10px;
 display: flex ;
 flex-direction:column ;
 justify-content: space-around}
 
-footer section .Novedades  { 
-  color :  #837d7d;
+ .Novedades  { 
+color :  #837d7d;
 text-align: center;
 font-size: 12;
-margin: auto;
- ;
  }
 
 /* display : flex;
 flex-direction: row;
 justify-content: ; */
 
-footer section div .Icono {color:#1259c3
+ .Icono {color:#1259c3
         ;
         font-size: 2em;
         margin-top: 10px;
         margin-bottom: 10px;
+        transition-property: color;
+        transition-duration: 0.05s;
+        
      }
     
 
@@ -212,10 +214,27 @@ justify-content: space-between;
       font-size: 17px ;
     }
 
+    .logo {
+
+      animation: aumentar 1s linear 10 alternate;;
+    }
+    @keyframes aumentar{
+  
+      0%{ transform: scale(1);
+      
+      }
+      
+      100% {  transform: scale(1.3)
+      
+      
+      
+      } }
+  
+
     footer section  {
      
     margin: 10px ;
-    padding: 20px;
+    padding: 10px;
     display: flex ;
     flex-direction:row ;
     justify-content: space-around}
@@ -223,7 +242,7 @@ justify-content: space-between;
     .Novedades  { 
       color :  #837d7d;
     text-align: center;
-    font-size: 12;
+    font-size: 20px;
     margin-top: 20px;
      ;
      }
@@ -332,5 +351,19 @@ section.formularioLogin{ background-color: #ffffff;
     margin: 10px;
     background-color: #0044aa;
     color: #fff;
+    transition-property: background-color;
+    transition-delay: 0.02s;
     
+    }
+
+
+
+    .botton:hover {
+background-color: #0022AA;
+
+    }
+
+    .Icono:hover {
+
+      color: #39b54a;
     }

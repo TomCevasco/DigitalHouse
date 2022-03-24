@@ -31,16 +31,14 @@ app.get("/",(req,res) =>{
         }) ;
     
 
-        
-    app.get("/Llama",(req,res) =>{
+    
+     
 
-        res.sendFile(path.resolve(__dirname, "./views/Llama.html"))
-        
-        }) ;
+            app.get("/Producto",(req,res) =>{
+
+                res.sendFile(path.resolve(__dirname, "./views/Producto.html"))
+                
+                }) ;
 
 
-        app.get("/LlamaRegistro",(req,res) =>{
-
-            res.sendFile(path.resolve(__dirname, "./views/LlamaRegistro.html"))
-            
-            }) ;
+                
