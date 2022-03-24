@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log("running on port 3001"));
 
 
-
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
@@ -25,5 +24,6 @@ app.get("/registro", (req, res) => {
 });
 
 app.get("/producto", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./views/producto.html"));
-});
+    res.sendFile(path.resolve(__dirname, "./views/producto.html"));
+  });
+  
